@@ -5,3 +5,4 @@ node_modules/*
 .sass-cache/*
 css/.DS_Store
 css/sass/.DS_Store
+npm-debug.log
