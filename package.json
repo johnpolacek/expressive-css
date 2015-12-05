@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/johnpolacek/expressive-css/issues"
   },
-  "homepage": "https://github.com/johnpolacek/expressive-css",
+  "homepage": "http://johnpolacek.github.io/expressive-css/",
   "files": [
     "style.css"
   ]
