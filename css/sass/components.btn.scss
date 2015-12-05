@@ -1,0 +1,49 @@
+@import 'vars.scss';
+
+button, .btn {
+	display: inline-block;
+	background:$green;
+	width: auto;
+	color:#fff;
+	padding: $buttonPadding;
+	border-radius: $borderRadius;
+	transition: all .15s ease-in-out;
+	border:none;
+	text-decoration:none;
+	outline: none;
+	margin-bottom: 4px;
+	&:hover {
+		background: $green-dk;
+	}
+}
+.btn-blue {
+	background:$blue;
+	&:hover {
+		background: $blue-dk;
+	}
+}
+.btn-pink {
+	background:$pink;
+	&:hover {
+		background: $purple;
+	}
+}
+.btn-wide {
+	width:100%;
+}
+.btn-wide {
+	width:100%;
+}
+
+.btn-small {
+	padding: $buttonPaddingSmaller;
+	font-size: $fontSizeSmaller;
+}
+.btn-large {
+	padding: $buttonPadding2;
+	font-size: $fontSize2;
+}
+.btn-huge {
+	padding: $buttonPadding3;
+	font-size: $fontSize3;
+}

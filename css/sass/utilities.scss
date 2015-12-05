@@ -1,0 +1,51 @@
+@import 'utilities.containers.scss';
+@import 'utilities.typography.scss';
+@import 'utilities.colors.scss';
+@import 'vars.scss';
+
+/* Utilities */
+.hidden { display:none !important; }
+.transparent { opacity:0; }
+
+/* group = clearfix */
+.group:before,.group:after { content:" ";display:table; }
+.group:after{ clear:both; }
+
+.inline {
+	display: inline-block;
+	*display:inline;*zoom:1;
+  width: auto;
+}
+.wide { width: 100%; }
+.rel { position: relative; }
+.abs { position: absolute; }
+
+.pad-btn { padding: $buttonPadding; }
+
+.rounded { border-radius: $borderRadius; }
+
+.border { border: solid 1px rgba(0,0,0,.1); }
+.border-green { border: solid 1px $green; }
+.border-white { border: solid 1px $white; }
+.border-bottom { border-bottom: solid 1px rgba(0,0,0,.1); }
+.border-dashed { border-style: dashed; }
+
+/* Responsive Utilities */
+@import '_mixins/responsive-utilities.generator.scss';
+// Add all utility classes here in a mixin
+@mixin responsiveUtilities($_prefix:''){
+
+  .#{$_prefix}float-none { float: none; }
+  .#{$_prefix}float-right { float: right; }
+  .#{$_prefix}float-left { float: right; }
+
+  .#{$_prefix}text-center { text-align:center; }
+  .#{$_prefix}text-left { text-align:left; }
+  .#{$_prefix}text-right { text-align:right; }
+
+  .#{$_prefix}hidden { display: none; }
+
+  .#{$_prefix}border-left-0 { border-left:none; }
+  .#{$_prefix}border-top-0 { border-top:none; }
+}
+@include responsiveUtilitiesGenerator();

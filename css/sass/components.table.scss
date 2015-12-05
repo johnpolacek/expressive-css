@@ -1,0 +1,8 @@
+@import 'vars.scss';
+
+table { margin-bottom: $pad2; }
+th, td, caption { 
+	padding: $pad1;
+	text-align: left;
+	border-bottom: solid 1px #ddd;
+}

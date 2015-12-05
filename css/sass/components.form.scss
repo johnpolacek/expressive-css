@@ -1,0 +1,58 @@
+@import 'vars.scss';
+
+fieldset { margin-bottom: $pad2; }
+select { width: 100%; }
+input,textarea {
+	width: 100%;
+    padding: $buttonPadding;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+input[type=checkbox],input[type=radio] {
+	width: auto;
+    height: auto;
+    margin: 0 8px 0 0;
+}
+label {
+	width: 100%;
+	display: block;
+}
+input.error, select.error, textarea.error {
+	border: dotted 1px $red;
+}
+input[disabled],select[disabled],input[readonly],select[readonly] {
+	background-color: #eee;
+	color: #888;
+}
+input[readonly] {
+	cursor: text;
+}
+
+.tooltip { 
+	position: absolute;
+	top: 12px;
+    right: 12px;
+    background-color: #9fc74d;
+    color: white;
+    transform: translateY(-100%);
+    border: solid 2px #fff;
+}
+.tooltip:after {
+	top: 100%;
+	right: 16px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0,0,0,0);
+	border-top-color: $green;
+	border-width: 6px;
+}
+.tooltip-hover { visibility: hidden; }
+div:hover > .tooltip-hover { visibility: visible; }
+.tooltip.error:after { border-top-color: $red; }

@@ -1,0 +1,15 @@
+
+  // Containers Generator – Author & copyright (c) 2015: John Polacek
+  // Follow on Twitter: @johnpolacek
+
+  // Dual MIT & GPL license
+  
+  // Generates container utility classes for each width
+  // Requires vars with an array of $widths and a $containerName
+
+@mixin containersGenerator($widths, $containerName) {
+  @for $i from 1 through length($widths) {
+    $width: nth($widths, $i);
+    .#{$containerName}-#{$width} { max-width: #{$width}px; }
+  }
+}

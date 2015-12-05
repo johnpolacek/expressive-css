@@ -1,0 +1,20 @@
+
+  // Color Utilities Generator – Author & copyright (c) 2015: John Polacek
+  // Follow on Twitter: @johnpolacek
+
+  // Dual MIT & GPL license
+
+  // Project Page: http://johnpolacek.github.com/color-utilities
+  // Project Repo: https://github.com/johnpolacek/color-utilities
+  
+  // Generates color utility classes for each color
+  // Requires vars with an array of $colors and $colorNames
+
+@mixin colorUtilitiesGenerator($colors, $colorNames, $attr, $prefix) {
+  
+  @for $i from 1 through length($colors) {
+    $name: nth($colorNames, $i);
+    $color: nth($colors, $i);
+    .#{$prefix}-#{$name} { #{$attr}: $color; }
+  }
+}

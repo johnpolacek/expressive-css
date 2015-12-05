@@ -1,0 +1,62 @@
+ 
+  // Responsive Utilities – Author & copyright (c) 2015: John Polacek
+  // Follow on Twitter: @johnpolacek
+
+  // Dual MIT & GPL license
+
+  // Project Page: http://johnpolacek.github.com/responsive-utilities
+  // Project Repo: https://github.com/johnpolacek/responsive-utilities
+  
+  
+//* generate responsive utility classes for each breakpoint, defaults defined below */
+@mixin responsiveUtilitiesGenerator(
+         $breakpoints: (0, 480px, 800px), // breakpoints
+         $breakpointType: 'px',           // breakpoint type px or em 
+         $breakpointPrefixes: (s-,m-,l-)  // breakpoint prefixes
+       ) {
+
+  //* top-level classes first, no prefix */
+  @include responsiveUtilities();
+  
+  //* classes for each breakpoint, with prefix */
+  @for $i from 1 through length($breakpointPrefixes) {
+    $prefix: nth($breakpointPrefixes, $i);
+    $breakpoint_min: nth($breakpoints, $i);
+
+    // Add one to support pixel breakpoints, EMs don't need the extra bump
+    @if $breakpointType == 'px' {
+      $breakpoint_min: nth($breakpoints, $i) + 1;
+    }
+
+    $breakpoint_max: '';
+
+    @if $i < length($breakpointPrefixes) {
+      $breakpoint_max: nth($breakpoints, $i+1);
+    }
+
+   //* smallest breakpoint */
+    @if $breakpoint_min == 1 {
+
+      @media (max-width: $breakpoint_max) {
+        @include responsiveUtilities($prefix);
+      }
+          
+    } @else {
+
+      //* middle breakpoints */
+      @if $breakpoint_max != '' {
+
+        @media (min-width: $breakpoint_min) and (max-width: $breakpoint_max) {
+          @include responsiveUtilities($prefix);
+        }
+
+      //* largest breakpoint */
+      } @else {
+
+        @media (min-width: $breakpoint_min) {
+          @include responsiveUtilities($prefix);
+        }
+      }
+    }
+  }
+}

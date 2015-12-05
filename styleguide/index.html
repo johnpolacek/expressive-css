@@ -1,0 +1,520 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Expressive CSS</title>
+        <meta name="description" content="An approach to writing CSS using utility classes that are easy to write and understand.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic,200,200italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/style.min.css">
+        <link rel="shortcut icon" href="../favicon.ico">
+    </head>
+    <body>
+
+        <div class="github-fork-ribbon-wrapper right s-hidden">
+            <div class="github-fork-ribbon">
+                <a href="https://github.com/johnpolacek/expressive-css/">Fork me on GitHub</a>
+            </div>
+        </div>
+
+        <section class="grid-12 pad-3 s-pad-2">
+            <div class="div-960 div-c">
+                <h1 class="marg-2-bottom text-green-dk text-light border-bottom">Expressive CSS</h1>
+                <p class="text-grey">Stop defining the same CSS properties over and over again. Use a core group of utility classes to keep your CSS lightweight, scalable and easy to understand. Document your classes as you go, such as in this starter example.</p>
+                <p class="pad-1-top pad-3-bottom"><a href="../">View Authoring Guidelines</a></p>
+            </div>
+        </section>
+
+        <section class="grid-12 pad-2-top pad-3-sides s-pad-2-sides">
+            <div class="div-960 div-c">
+                <h2>Styleguide</h2>
+            </div>
+        </section>      
+
+        <section class="grid-12 pad-3 s-pad-2">
+            <div class="div-960 div-c">
+                <div class="grid-12 pad-3-bottom">
+                    <h3 class="marg-2-bottom bgr-blue text-white text-light pad-2-sides">Base</h3>
+                    <p>A good base contains default styles for HTML elements, written in such a way to minimize the need to override. Also include libraries for reset and grid scaffolding.</p>
+                    <p>Use a <a href="../styleguide/base.html">test page</a> to view your base element styling.</p>
+                </div>
+                <div class="grid-12 pad-3-bottom">
+                    <h4 class="pad-1-bottom text-blue border-bottom marg-3-bottom">Smart Defaults</h4>
+                    <div class="grid-12 pad-3-bottom">
+                        <h5><code>html</code></h5>
+                        <p>Set default font styles, including family, color, size and line height.</p>
+                        <div class="l-grid-6 border-green pad-2-sides text-small">
+<pre><code>html {
+    font-family: Verdana,sans-serif;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-12 pad-3-bottom">
+                        <h5>
+                            <span class="h1">h1</span>
+                            <span class="h2">h2</span>
+                            <span class="h3">h3</span>
+                            <span class="h4">h4</span>
+                            <span class="h5">h5</span>
+                            <span class="h6">h6</span>
+                            <span class="text">p</span>
+                        </h5>
+                        <p>To keep things DRY and consistent across your site, include utility classes for each level of font-sizing. Set margin and padding to 0 for <code>h1-h6</code>.</p>
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small">
+<pre><code>h1,h2,h3,h4,h5,h6,p { padding:0; margin:0; }
+h1, .h1 { font-size: 5em; }
+h2, .h2 { font-size: 2.5em; }
+h3, .h3 { font-size: 1.75em; }
+h4, .h4 { font-size: 1.375em; }
+h5, .h5 { font-size: 1.2em; }
+h6, .h6 { font-size: 1em; }
+p, .text { 
+    padding-bottom:.5em;
+    font-size: 1em;
+    font-weight: normal;
+}</code></pre>
+                        </div>
+                        <div class="grid-12">
+                            <div class="grid-12 l-grid-6 border-green bgr-green pad-2-sides text-small">
+<pre><code>&lt;span class="h1"&gt;h1&lt;/span&gt;
+&lt;span class="h2"&gt;h2&lt;/span&gt;
+&lt;span class="h3"&gt;h3&lt;/span&gt;
+&lt;span class="h4"&gt;h4&lt;/span&gt;
+&lt;span class="h5"&gt;h5&lt;/span&gt;
+&lt;span class="h6"&gt;h6&lt;/span&gt;
+&lt;span class="text"&gt;p&lt;/span&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-12 pad-3-bottom">
+                        <h5 class="pad-2-bottom">
+                            <div class="h4 bold">strong, .bold</div>
+                            <div class="text h3 italic">em, .italic</div>
+                            <div class="text h3 text-small">small, .text-small</div>
+                        </h5>
+                        <p>Extend the defaults for these text styling elements to utility classes such as <code>.text-small .italic .bold</code>.</p>
+                        <div class="l-grid-6 border-green pad-2-sides text-small">
+<pre><code>strong, .bold { font-weight:bold; }
+em, .italic { font-style:italic; }
+small, .text-small { font-size: 80%; }</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-12 pad-3-bottom">
+                    <h4 class="pad-1-bottom text-blue border-bottom marg-3-bottom">Libraries</h4>
+                    <p>Bring your own reset and grid. In this example, we use:</p>
+                    <ul>
+                        <li><p>Reset - <a href="https://html5boilerplate.com/">HTML5 Boilerplate</a> &amp; <a href="https://necolas.github.io/normalize.css/">Normalize</a></p></li>
+                        <li><p>Grid - <a href="http://johnpolacek.github.io/simple-grid/">Simple Grid</a></p></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grid-12 pad-3 s-pad-2">
+            <div class="div-960 div-c">
+                <div class="grid-12 pad-3-bottom">
+                    <h3 class="marg-2-bottom bgr-green-dk text-white text-light pad-2-sides">Utilities</h3>
+                    <p>Utility classes are at the heart of Expressive CSS. They are easy to write and understand. Using them reduces the necessity to re-declare the same sets of related properties over and over again, keeping your stylesheets more DRY and less complex.</p>
+                </div>
+                <div class="grid-12 pad-3-bottom">
+                    <h4 class="pad-1-bottom text-green-dk border-bottom marg-3-bottom">Page Layout</h4>
+                    <div class="grid-12 pad-3-bottom">
+                        <h5><code>.grid-#</code></h5>
+                        <p>Use the grid to handle the arrangement of fluid width elements on the page. Your grid should allow for responsive width adjustments at different breakpoints.</p>
+                        <div class="grid-12">
+                            <div class="grid-3 m-grid-6 s-grid-12 border-white bgr-green pad-2-sides pad-1-top text-small">
+<pre><code>&lt;div class="grid-12 m-grid-6 l-grid-3"&gt;
+This div will be full 
+width for small screens, 
+2-column for medium and 
+4-column for large.
+&lt;/div&gt;</code></pre>
+                            </div>
+                            <div class="grid-3 m-grid-6 s-grid-12 border-white bgr-green pad-2-sides pad-1-top text-small">
+<pre><code>&lt;div class="grid-12 m-grid-6 l-grid-3"&gt;
+This div will be full 
+width for small screens, 
+2-column for medium and 
+4-column for large.
+&lt;/div&gt;</code></pre>
+                            </div>
+                            <div class="grid-3 m-grid-6 s-grid-12 border-white bgr-green pad-2-sides pad-1-top text-small">
+<pre><code>&lt;div class="grid-12 m-grid-6 l-grid-3"&gt;
+This div will be full 
+width for small screens, 
+2-column for medium and 
+4-column for large.
+&lt;/div&gt;</code></pre>
+                            </div>
+                            <div class="grid-3 m-grid-6 s-grid-12 border-white bgr-green pad-2-sides pad-1-top text-small">
+<pre><code>&lt;div class="grid-12 m-grid-6 l-grid-3"&gt;
+This div will be full 
+width for small screens, 
+2-column for medium and 
+4-column for large.
+&lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-12 pad-3-bottom">
+                        <h5><code>.container-#</code></h5>
+                        <p>Use container classes for semi-fixed width elements. Use .container, .box, .wrapper, .div, .div or something similar as a prefix. Typically these have their left and right margin set to auto so they will be centered.</p>
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small">
+<pre><code>.div-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-320 {  max-width:320px; }
+.div-400 {  max-width:400px; }
+.div-480 {  max-width:480px; }
+.div-640 {  max-width:640px; }
+.div-720 {  max-width:720px; }
+.div-800 {  max-width:800px; }
+.div-960 {  max-width:960px; }
+.div-1100 { max-width:1100px; }
+.div-1200 { max-width:1200px; }</code></pre>
+                        </div>
+                        <div class="grid-12 pad-3-vert text-center">
+                            <div class="div-960 div-c marg-1-bottom bgr-green"><code>.div-960</code></div>
+                            <div class="div-800 marg-1-bottom bgr-green"><code>.div-800</code></div>
+                            <div class="div-720 marg-1-bottom bgr-green"><code>.div-720</code></div>
+                            <div class="div-640 marg-1-bottom bgr-green"><code>.div-640</code></div>
+                            <div class="div-480 marg-1-bottom bgr-green"><code>.div-480</code></div>
+                            <div class="div-400 marg-1-bottom bgr-green"><code>.div-400</code></div>
+                            <div class="div-320 marg-1-bottom bgr-green"><code>.div-320</code></div>
+                            <div class="div-960 div-c block-center marg-1-bottom bgr-green"><code>.div-center .div-960</code></div>
+                            <div class="div-800 block-center marg-1-bottom bgr-green"><code>.div-center .div-800</code></div>
+                            <div class="div-720 block-center marg-1-bottom bgr-green"><code>.div-center .div-720</code></div>
+                            <div class="div-640 block-center marg-1-bottom bgr-green"><code>.div-center .div-640</code></div>
+                            <div class="div-480 block-center marg-1-bottom bgr-green"><code>.div-center .div-480</code></div>
+                            <div class="div-400 block-center marg-1-bottom bgr-green"><code>.div-center .div-400</code></div>
+                            <div class="div-320 block-center marg-1-bottom bgr-green"><code>.div-center .div-320</code></div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-12 pad-3-bottom">
+                        <h5><code>.pad-# .marg-#</code></h5>
+                        <p>Use classes for levels of padding and margin to use across your site. By using these classes exclusively to set the spacing in and around the elements on the page, you will find it simple to maintain consistent alignment.</p>
+                        <p>Additionally, like the grid, use breakpoint prefixing to adjust spacing for making layout adjustments at different screen sizes (e.g. <code>.s-pad-0</code> to remove padding for small screen sizes).</p>
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small">
+<pre><code>.pad-1 { padding: .5em; }
+.pad-1-left { padding-left: .5em; }
+.pad-1-right { padding-right: .5em; }
+.pad-1-top { padding-top: .5em; }
+.pad-1-bottom { padding-bottom: .5em; }
+.pad-1-sides { padding-left: .5em; padding-right: .5em; }
+.pad-1-vert { padding-top: .5em; padding-bottom: .5em; }
+.pad-2 { padding: 1em; }
+.pad-2-left { padding-left: 1em; }
+...etc
+</code></pre>
+                        </div>
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small l-border-left-0 m-border-top-0 s-border-top-0">
+<pre><code>.marg-1 { margin: .5em; }
+.marg-1-left { margin-left: .5em; }
+.marg-1-right { margin-right: .5em; }
+.marg-1-top { margin-top: .5em; }
+.marg-1-bottom { margin-bottom: .5em; }
+.marg-1-sides { margin-left: .5em; margin-right: .5em; }
+.marg-1-vert { margin-top: .5em; margin-bottom: .5em; }
+.marg-2 { margin: 1em; }
+.marg-2-left { margin-left: 1em; }
+...etc
+</code></pre>
+                        </div>
+                        <div class="grid-12 pad-3-vert text-center">
+                            <div class="grid-3 s-grid-6 border-white bgr-green pad-0"><code>.pad-0</code></div>
+                            <div class="grid-3 s-grid-6 border-white bgr-green pad-1"><code>.pad-1</code></div>
+                            <div class="grid-3 s-grid-6 border-white bgr-green pad-2"><code>.pad-2</code></div>
+                            <div class="grid-3 s-grid-6 border-white bgr-green pad-3"><code>.pad-3</code></div>
+                        </div>
+                        
+                        <div class="grid-12 marg-1-bottom text-center bgr-green"><code>.marg-1-bottom</code></div>
+                        <div class="grid-12 marg-2-bottom text-center bgr-green"><code>.marg-2-bottom</code></div>
+                        <div class="grid-12 marg-3-bottom text-center bgr-green"><code>.marg-3-bottom</code></div>
+
+                        <div class="grid-12 s-marg-3-top m-marg-2-top l-marg-1-top text-center bgr-green"><code>.s-marg-3-top .m-marg-2-top .l-marg-1-top</code></div>
+
+                        <div class="grid-12 pad-3-vert text-center">
+                            <div class="grid-2 m-grid-4 s-grid-6 border-white bgr-green pad-3-vert">
+                                <div class="border">
+                                    <code>.pad-3-vert</code>
+                                </div>
+                            </div>
+                            <div class="grid-2 m-grid-4 s-grid-6 border-white bgr-green pad-3-bottom">
+                                <div class="border">
+                                    <code>.pad-3-bottom</code>
+                                </div>
+                            </div>
+                            <div class="grid-2 m-grid-4 s-grid-6 border-white bgr-green pad-3-top">
+                                <div class="border">
+                                    <code>.pad-3-top</code>
+                                </div>
+                            </div>
+                            <div class="grid-2 m-grid-4 s-grid-6 border-white bgr-green pad-3-sides">
+                                <div class="border">
+                                    <code>.pad-3-sides</code>
+                                </div>
+                            </div>
+                            <div class="grid-2 m-grid-4 s-grid-6 border-white bgr-green pad-3-left text-left">
+                                <div class="border">
+                                    <code>.pad-3-left</code>
+                                </div>
+                            </div>
+                            <div class="grid-2 m-grid-4 s-grid-6 border-white bgr-green pad-3-right text-right">
+                                <div class="border">
+                                    <code>.pad-3-right</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-12 pad-3-bottom">
+                        <h4 class="pad-1-bottom text-green-dk border-bottom marg-3-bottom">Typography</h4>
+                        <p>There should already be a good set of utility classes in your base classes for text size and styling (e.g. <code>.bold .h2 .italic</code>). In addition to these, create utility classes for all the different colors of text you will plan on using. Use an abbreviation so it is clear that this is text color and to enable you to easily find and replace the class name to a different color if necessary.</p>
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small">
+<pre><code>.text-blue-lt { color: #75c5df; }
+.text-blue { color: #287dbe; }
+.text-blue-dk { color: #384992; }
+.text-green { color: #9fc74d; }
+.text-green-dk { color: #5bb12f; }
+.text-white { color: white; }
+.text-grey { color: #999999; }
+.text-pink { color: #ec66a2; }
+.text-purple { color: #9e579e; }</code></pre>
+                        </div>
+                        <div class="grid-12 pad-3-top h2 text-light">
+                            <span class="text-blue-lt">blue-lt</span>
+                            <span class="text-blue">blue</span>
+                            <span class="text-blue-dk">blue-dk</span>
+                            <span class="text-green">green</span>
+                            <span class="text-green-dk">green-dk</span>
+                            <span class="text-grey">grey</span>
+                            <span class="text-pink">pink</span>
+                            <span class="text-purple">purple</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-12 pad-3 s-pad-2">
+            <div class="div-960 div-c">
+                <div class="grid-12 pad-3-bottom">
+                    <h3 class="marg-2-bottom bgr-purple text-white text-light pad-2-sides">Components</h3>
+                    <p>To reduce complexity in your CSS, rely on utility classes whenever possible. For elements that necessitate additional custom styling, use component classes. For these components, you may wish to use a CSS methodology such as OOCSS or BEM.</p>
+                    <p>Below are some common examples of components.</p>
+                </div>
+                <div class="grid-12 pad-3-bottom">
+                    <h5><code>.btn</code></h5>
+                    <div class="grid-12 l-grid-6 border-green pad-2-sides text-small marg-2-bottom">
+<pre><code>button, .btn {
+    display: inline-block;
+    background: #9fc74d;
+    display: inline;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: all .15s ease-in-out;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+button:hover, .btn:hover {
+    background: #5bb12f;
+}</code></pre>
+                    </div>
+                    <div class="grid-12 pad-2-vert">
+                        <a href="#" class="btn">&lt;a href="#" class="btn"&gt;</a>
+                        <button>&lt;button&gt;</button>
+                        <input type="submit" class="btn" value='&lt;input type="submit" class="btn"&gt;' />
+                    </div>
+                    <div class="grid-12 pad-2-vert">
+                        <button class="btn-huge">.btn-huge</button>
+                        <button class="btn-large">.btn-large</button>
+                        <button>.btn</button>
+                        <button class="btn-small">.btn-small</button>
+                    </div>
+                </div>
+                <div class="grid-12 pad-1-bottom">
+                    <h5><code>&lt;form&gt;</code></h5>
+                    <p class="pad-2-bottom">Use the grid to lay out the form, and take advantage of its responsive breakpoint prefixing for control of its structure across all screen sizes.</p>
+                    <div class="grid-12 pad-2-vert">
+                        <div class="grid-12 pad-2-bottom">
+                            <h6>Example Contact Form</h6>
+                        </div>
+                        <form class="grid-12 l-grid-8" action="./" type="post">
+                            <div class="grid-6 s-grid-12 pad-1-right pad-1-bottom">
+                                <label for="first">First Name</label>
+                                <input id="first" name="first" type="text" required />
+                            </div>
+                            <div class="grid-6 s-grid-12 pad-1-right pad-1-bottom">
+                                <label for="last">Last Name</label>
+                                <input id="last" name="last" type="text" required />
+                            </div>
+                            <div class="grid-12 pad-1-right pad-1-bottom">
+                                <label for="address1">Street Address</label>
+                                <input id="address1" name="address1" type="text" class="marg-1-bottom" />
+                                <input id="address2" name="address2" type="text" required />
+                            </div>
+                            <div class="grid-6 s-grid-12 pad-1-right pad-1-bottom">
+                                <label for="city">City</label>
+                                <input id="city" name="city" type="text" required />
+                            </div>
+                            <div class="grid-2 s-grid-4 pad-1-right pad-1-bottom">
+                                <label for="state">State</label>
+                                <input id="state" name="state" type="text" required />
+                            </div>
+                            <div class="grid-4 s-grid-8 pad-1-right pad-1-bottom">
+                                <label for="zip">Zip Code</label>
+                                <input id="zip" name="zip" type="text" required />
+                            </div>
+                            <div class="grid-12 pad-1-vert">
+                                <div class="grid-6 s-grid-12">
+                                    <label for="contact">Preferred Method of Contact</label>
+                                    <select name="contact" id="contact">
+                                        <option value="">Please select...</option>
+                                        <option value="phone">Phone</option>
+                                        <option value="email">Email</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grid-6 s-grid-12 pad-1-right pad-1-bottom">
+                                <label for="tel">Phone</label>
+                                <input id="tel" name="tel" type="tel" pattern="[0-9]{10}" required  />
+                            </div>
+                            <div class="grid-6 s-grid-12 pad-1-right pad-1-bottom">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" required />
+                            </div>
+                            <div class="grid-12 pad-2-top pad-1-right">
+                                <label for="contact" class="inline float-right"><input type="checkbox" />I agree to the terms and conditions</label>
+                            </div>      
+                            <div class="grid-12 m-grid-6 m-offset-6 l-grid-4 l-offset-8 pad-1-right pad-3-top">
+                                <input type="submit" value="Save" class="btn wide" />    
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="grid-12 pad-3-top pad-1-bottom">
+                        <h5>Form Components</h5>
+                    </div>
+                    <div class="grid-12 pad-3-bottom">
+                        <p class="pad-3-bottom">Use a library for tooltips and validation errors, such as <a href="http://getbootstrap.com/javascript/#tooltips">bootstrap</a> or <a href="http://kushagragour.in/lab/hint/">hint.css</a>, or do your own thing.</p>
+                        <div class="grid-12 pad-3-top">
+                            <div class="grid-3 s-grid-6 pad-1-right pad-1-bottom rel">
+                                <label for="hoverTooltip">Hover Tooltip
+                                </label>
+                                <input id="hoverTooltip" name="hoverTooltip" type="text" value="Hover for info"  />
+                                <div class="tooltip tooltip-hover pad-btn inline">Here is a sentence of helpful information for you.</div>
+                            </div>
+                            <div class="grid-3 s-grid-6 pad-1-right pad-1-bottom rel">
+                                <label for="error">Error</label>
+                                <input id="error" name="error" type="text" class="error" value="Something invalid"  />
+                                <div class="error text-red">We got a problem.</div>
+                            </div>
+                            <div class="grid-3 s-grid-6 pad-1-right pad-1-bottom rel">
+                                <label for="errorTooltip">Error Tooltip</label>
+                                <input id="errorTooltip" name="errorTooltip" type="text" class="error" value="Something invalid"  />
+                                <div class="tooltip error bgr-red text-white pad-btn inline">We got a problem.</div>
+                            </div>
+                        </div>
+                        <div class="grid-12 pad-2-vert">
+                            <div class="grid-3 s-grid-6 pad-1-right pad-1-bottom rel">
+                                <label for="disabled">Disabled</label>
+                                <input id="disabled" name="disabled" type="text" value="Disabled" disabled />
+                            </div>
+                            <div class="grid-3 s-grid-6 pad-1-right pad-1-bottom rel">
+                                <label for="readonly">Read Only</label>
+                                <input id="readonly" name="readonly" type="text" value="Read Only" readonly onfocus="this.select();" onmouseup="return false;" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-12 pad-3-bottom">
+                        <h5><code>.modal</code></h5>
+                        <button id="triggerModal" class="btn-huge marg-2-top" onclick="
+                            document.getElementById('modalExample').style.visibility = 'visible';
+                            document.getElementById('modalExample').style.height = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight )+'px';
+                            document.getElementById('modalExampleContent').style['margin-top'] = ((window.pageYOffset || document.scrollTop)  - (document.clientTop || 0) + 32)+'px';
+                        ">
+                            Trigger Modal
+                        </button>
+                    </div>
+
+                    <div class="grid-12 pad-3-top pad-1-bottom">
+                        <h5>Other Components</h5>
+                        <p>Some components are truly one-offs. When you truly will not ever need to use that style anywhere else, such as in a graphic with absolutely positioned interior elements, use a very specifically named component class (.e.g. <code>.animated-flying-tomato</code>).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-12 pad-3 s-pad-2">
+            <div class="div-960 div-c pad-3-bottom">
+                <div class="grid-12 pad-3-bottom">
+                    <h3 class="marg-2-bottom bgr-pink text-white text-light pad-2-sides">More Info</h3>
+                    <p>This basic example styleguide is meant to be a starting point. There are many variations that you may take for any given project. To find out more about similar approaches to CSS, check out the following related articles.</p>
+                    <ul class="pad-1-vert">
+                        <li><a href="https://blog.colepeters.com/building-and-shipping-functional-css/">Building and shipping functional CSS</a></li>
+                        <li><a href="http://seesparkbox.com/foundry/naming_css_stuff_is_really_hard">Naming CSS Stuff Is Really Hard</a></li>
+                        <li><a href="http://tympanus.net/codrops/2013/01/22/defending-presentational-class-names/">Defending Presentational Class Names</a></li>
+                        <li><a href="http://www.impressivewebs.com/avoid-nonsemantic-classes/">Why Avoid Non-semantic Classes? Because They’re Non-semantic!</a></li>
+                        <li><a href="http://www.smashingmagazine.com/2013/10/21/challenging-css-best-practices-atomic-approach/">Challenging CSS Best Practices</a></li>
+                        <li><a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">About HTML Semantics and Front-End Architecture</a></li>
+                        <li><a href="http://www.sitepoint.com/using-helper-classes-dry-scale-css/">Using Helper Classes to DRY and Scale CSS</a></li>
+                        <li><a href="http://www.basscss.com">Basscss</a></li>
+                        <li><a href="http://tachyons.io/">Tachyons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-overlay" id="modalExample" onclick="this.style.visibility = 'hidden'">
+            <div class="modal bgr-white block-400 pad-3" id="modalExampleContent">
+                <a href="#" class="modal-close pad-2" onclick="document.getElementById('modalExample').style.visibility = 'hidden';return false;">&times;</a>
+                <h3 class="pad-1-bottom">Modals</h3>
+                <p>Sometimes you need to interrupt the person to have them do something.</p>
+                <div class="pad-3-top text-right">
+                    <a href="#" class="link-text" onclick="document.getElementById('modalExample').style.visibility = 'hidden';return false;">Cancel</a>
+                    <a href="#" class="btn marg-2-left" onclick="
+                        document.getElementById('modalExample').style.visibility = 'hidden';
+                        document.getElementById('modalSuccess').style.visibility = 'visible';
+                        document.getElementById('modalSuccess').style.height = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight )+'px';
+                        document.getElementById('modalSuccessContent').style['margin-top'] = ((window.pageYOffset || document.scrollTop)  - (document.clientTop || 0) + 32)+'px';
+                        return false;">Do The Thing</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modalSuccess" onclick="this.style.visibility = 'hidden'">
+            <div class="modal bgr-white block-400 pad-3" id="modalSuccessContent">
+                <a href="#" class="modal-close pad-2" onclick="document.getElementById('modalSuccess').style.visibility = 'hidden';return false;">&times;</a>
+                <h3 class="pad-1-bottom">All Set!</h3>
+                <p>Congratulations. You did it.</p>
+                <div class="pad-2-top text-right">
+                    <a href="#" class="btn marg-2-left" onclick="document.getElementById('modalSuccess').style.visibility = 'hidden';return false;">OK</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-2821890-9','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

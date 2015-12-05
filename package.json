@@ -1,0 +1,37 @@
+{
+  "name": "expressive-css",
+  "title": "Expressive CSS",
+  "version": "1.0.0",
+  "description": "A starter template configuration for building sites Expressive CSS.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnpolacek/expressive-css.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "tool",
+    "utilities",
+    "responsive"
+  ],
+  "devDependencies": {
+    "onchange": "latest",
+    "node-sass": "latest"
+  },
+  "scripts":{
+    "build":"node-sass css/sass/base.scss css/stylesheets/base.css --style expanded && node-sass css/sass/utilities.scss css/stylesheets/utilities.css --style compact && node-sass css/sass/components.scss css/stylesheets/components.css --style expanded && node-sass css/sass/style.scss css/style.min.css --style compressed",
+    "watch":"onchange 'css/sass/**/*' -- npm run build"
+  },
+  "author": {
+    "name": "John Polacek",
+    "url": "http://www.johnpolacek.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnpolacek/expressive-css/issues"
+  },
+  "homepage": "https://github.com/johnpolacek/expressive-css",
+  "files": [
+    "style.css"
+  ]
+}

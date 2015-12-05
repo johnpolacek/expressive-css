@@ -1,0 +1,6 @@
+@import '_mixins/color-utilities.generator.scss';
+@import 'vars.scss';
+
+/* Color Utils */
+@include colorUtilitiesGenerator($colors, $colorNames, 'background-color','bgr');
+@include colorUtilitiesGenerator($colors, $colorNames, 'color','text');

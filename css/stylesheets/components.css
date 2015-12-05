@@ -1,0 +1,213 @@
+/* Components */
+fieldset {
+  margin-bottom: 16px; }
+
+select {
+  width: 100%; }
+
+input, textarea {
+  width: 100%;
+  padding: 4px 8px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+input[type=checkbox], input[type=radio] {
+  width: auto;
+  height: auto;
+  margin: 0 8px 0 0; }
+
+label {
+  width: 100%;
+  display: block; }
+
+input.error, select.error, textarea.error {
+  border: dotted 1px #cd242a; }
+
+input[disabled], select[disabled], input[readonly], select[readonly] {
+  background-color: #eee;
+  color: #888; }
+
+input[readonly] {
+  cursor: text; }
+
+.tooltip {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #9fc74d;
+  color: white;
+  transform: translateY(-100%);
+  border: solid 2px #fff; }
+
+.tooltip:after {
+  top: 100%;
+  right: 16px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: #9fc74d;
+  border-width: 6px; }
+
+.tooltip-hover {
+  visibility: hidden; }
+
+div:hover > .tooltip-hover {
+  visibility: visible; }
+
+.tooltip.error:after {
+  border-top-color: #cd242a; }
+
+button, .btn {
+  display: inline-block;
+  background: #9fc74d;
+  width: auto;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all .15s ease-in-out;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  margin-bottom: 4px; }
+  button:hover, .btn:hover {
+    background: #5bb12f; }
+
+.btn-blue {
+  background: #287dbe; }
+  .btn-blue:hover {
+    background: #384992; }
+
+.btn-pink {
+  background: #ec66a2; }
+  .btn-pink:hover {
+    background: #9e579e; }
+
+.btn-wide {
+  width: 100%; }
+
+.btn-wide {
+  width: 100%; }
+
+.btn-small {
+  padding: 3px 6px;
+  font-size: 80%; }
+
+.btn-large {
+  padding: 8px 16px;
+  font-size: 1.2em; }
+
+.btn-huge {
+  padding: 16px 24px;
+  font-size: 1.375em; }
+
+p a, li a, blockquote a, cite a, .link-text {
+  color: #287dbe;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  text-decoration: none; }
+
+p a:hover, li a:hover, blockquote a:hover, cite a:hover, .link-text:hover {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.12); }
+
+table {
+  margin-bottom: 16px; }
+
+th, td, caption {
+  padding: 8px;
+  text-align: left;
+  border-bottom: solid 1px #ddd; }
+
+.modal-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(66, 66, 66, 0.8);
+  visibility: hidden;
+  z-index: 9999999; }
+
+.modal {
+  position: relative; }
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  color: #777;
+  line-height: .5;
+  font-size: 24px; }
+
+/*!
+ * "Fork me on GitHub" CSS ribbon v0.1.1 | MIT License
+ * https://github.com/simonwhitaker/github-fork-ribbon-css
+*/
+/* Left will inherit from right (so we don't need to duplicate code) */
+.github-fork-ribbon {
+  /* The right and left classes determine the side we attach our banner to */
+  position: absolute;
+  /* Add a bit of padding to give some substance outside the "stitching" */
+  padding: 2px 0;
+  /* Set the base colour */
+  background-color: #ec66a2;
+  /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.15)));
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
+  background-image: -ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.15));
+  z-index: 9999;
+  pointer-events: auto; }
+
+.github-fork-ribbon a,
+.github-fork-ribbon a:hover {
+  /* Set the text properties */
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-weight: bold;
+  /* Set the geometry. If you fiddle with these you'll also need
+     to tweak the top and right values in .github-fork-ribbon. */
+  width: 200px;
+  line-height: 20px;
+  /* Set the layout properties */
+  display: inline-block;
+  padding: 2px 0;
+  /* Add "stitching" effect */
+  border-width: 1px 0;
+  border-style: dotted;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.7); }
+
+.github-fork-ribbon-wrapper {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 9999;
+  pointer-events: none; }
+
+.github-fork-ribbon-wrapper.fixed {
+  position: fixed; }
+
+.github-fork-ribbon-wrapper.right {
+  right: 0; }
+
+.github-fork-ribbon-wrapper.right .github-fork-ribbon {
+  top: 42px;
+  right: -43px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }

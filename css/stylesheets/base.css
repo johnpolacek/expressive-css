@@ -1,0 +1,74 @@
+/*  Expressive CSS
+
+	Author & copyright (c) 2015: John Polacek
+	Follow on Twitter: @johnpolacek
+	Dual MIT & GPL license
+
+	Project Page: http://johnpolacek.github.com/expressive-css
+	Project Repo: https://github.com/johnpolacek/expressive-css
+*/
+html {
+  font-family: 'Titillium Web', sans-serif;
+  color: #234;
+  font-size: 1em;
+  line-height: 1.6; }
+
+header, footer {
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6, blockquote {
+  margin: 0;
+  padding: 0; }
+
+h1, .h1 {
+  font-size: 5em;
+  line-height: 1.1; }
+
+h2, .h2 {
+  font-size: 2.5em;
+  line-height: 1.1; }
+
+h3, .h3 {
+  font-size: 1.75em;
+  line-height: 1.3; }
+
+h4, .h4, legend {
+  font-size: 1.375em; }
+
+h5, .h5 {
+  font-size: 1.2em; }
+
+h6, .h6 {
+  font-size: 1em; }
+
+p, pre, blockquote {
+  margin: 0;
+  padding: 0 0 16px;
+  font-size: 1em;
+  font-weight: normal; }
+
+code {
+  font-family: Monaco, monospace;
+  font-size: .9em; }
+
+@media (max-width: 480px) {
+  h1, .h1 {
+    font-size: 4em; } }
+
+dt, strong, .bold {
+  font-weight: bold; }
+
+em, .italic {
+  font-style: italic; }
+
+small, .text-small {
+  font-size: 80%; }
+
+ul {
+  padding-left: 1.5em; }
+
+ul ul {
+  padding-top: 8px; }
+
+li {
+  padding-bottom: 8px; }

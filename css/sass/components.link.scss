@@ -1,0 +1,10 @@
+@import 'vars.scss';
+
+p a, li a, blockquote a, cite a, .link-text {
+	color: $blue;
+    border-bottom: solid 1px rgba(0,0,0,.1);
+    text-decoration: none;
+}
+p a:hover, li a:hover, blockquote a:hover, cite a:hover, .link-text:hover {
+    border-bottom: solid 1px rgba(0,0,0,.12);
+}
