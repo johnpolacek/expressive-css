@@ -32,6 +32,8 @@
   },
   "homepage": "http://johnpolacek.github.io/expressive-css/",
   "files": [
-    "style.css"
-  ]
+    "css",
+    "styleguide",
+    "index.html"
+  ],
 }
