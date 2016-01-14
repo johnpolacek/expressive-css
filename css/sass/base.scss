@@ -23,7 +23,7 @@ h2, .h2 { font-size: $fontSize5; line-height:1.1; }
 h3, .h3 { font-size: $fontSize4; line-height:1.3; }
 h4, .h4, legend { font-size: $fontSize3; }
 h5, .h5 { font-size: $fontSize2; }
-h6, .h6 { font-size: $fontSize1; }
+h6, .h6, .p { font-size: $fontSize1; }
 p, pre, blockquote { 
     margin:0;
     padding:0 0 $pad2;
