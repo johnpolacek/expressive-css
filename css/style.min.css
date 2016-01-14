@@ -1327,6 +1327,24 @@ th, td, caption {
   margin-left: auto;
   margin-right: auto; }
 
+.div-gradient-overlay {
+  display: block;
+  position: relative; }
+  .div-gradient-overlay:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    background: linear-gradient(to bottom, transparent 50%, #000 100%); }
+
+.div-gradient-overlay img {
+  width: 100%; }
+
 .text-light {
   font-weight: 200; }
 
@@ -1446,6 +1464,9 @@ th, td, caption {
   left: 0; }
 
 .z-999 {
+  z-index: 99; }
+
+.z-999 {
   z-index: 999; }
 
 .z-9999 {
@@ -1492,7 +1513,7 @@ th, td, caption {
   float: right; }
 
 .float-left {
-  float: right; }
+  float: left; }
 
 .text-center {
   text-align: center; }
@@ -1518,7 +1539,7 @@ th, td, caption {
   .s-float-right {
     float: right; }
   .s-float-left {
-    float: right; }
+    float: left; }
   .s-text-center {
     text-align: center; }
   .s-text-left {
@@ -1538,7 +1559,7 @@ th, td, caption {
   .m-float-right {
     float: right; }
   .m-float-left {
-    float: right; }
+    float: left; }
   .m-text-center {
     text-align: center; }
   .m-text-left {
@@ -1558,7 +1579,7 @@ th, td, caption {
   .l-float-right {
     float: right; }
   .l-float-left {
-    float: right; }
+    float: left; }
   .l-text-center {
     text-align: center; }
   .l-text-left {

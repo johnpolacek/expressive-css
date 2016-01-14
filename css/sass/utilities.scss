@@ -24,6 +24,7 @@
 .pos-right {right:0;}
 .pos-left {left:0;}
 
+.z-999 {z-index:99};
 .z-999 {z-index:999};
 .z-9999 {z-index:9999};
 .z-99999 {z-index:99999};
@@ -47,7 +48,7 @@
 
   .#{$_prefix}float-none { float: none; }
   .#{$_prefix}float-right { float: right; }
-  .#{$_prefix}float-left { float: right; }
+  .#{$_prefix}float-left { float: left; }
 
   .#{$_prefix}text-center { text-align:center; }
   .#{$_prefix}text-left { text-align:left; }
