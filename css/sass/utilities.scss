@@ -31,6 +31,10 @@
 .rounded { border-radius: $borderRadius; }
 
 .border { border: solid 1px rgba(0,0,0,.1); }
+.border-top { border-top: solid 1px rgba(0,0,0,.1); }
+.border-bottom { border-bottom: solid 1px rgba(0,0,0,.1); }
+.border-left { border-left: solid 1px rgba(0,0,0,.1); }
+.border-right { border-right: solid 1px rgba(0,0,0,.1); }
 .border-green { border: solid 1px $green; }
 .border-white { border: solid 1px $white; }
 .border-bottom { border-bottom: solid 1px rgba(0,0,0,.1); }
