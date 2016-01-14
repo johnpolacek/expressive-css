@@ -1040,7 +1040,7 @@ h4, .h4, legend {
 h5, .h5 {
   font-size: 1.2em; }
 
-h6, .h6 {
+h6, .h6, .p {
   font-size: 1em; }
 
 p, pre, blockquote {
@@ -1065,6 +1065,9 @@ em, .italic {
 
 small, .text-small {
   font-size: 80%; }
+
+.text-reg {
+  font-weight: normal; }
 
 ul {
   padding-left: 1.5em; }
