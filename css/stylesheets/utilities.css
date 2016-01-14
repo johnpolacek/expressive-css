@@ -36,6 +36,12 @@
 .text-light {
   font-weight: 200; }
 
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
 /* Color Utils */
 .bgr-blue-lt {
   background-color: #75c5df; }
