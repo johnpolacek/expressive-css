@@ -1354,6 +1354,9 @@ th, td, caption {
 .lowercase {
   text-transform: lowercase; }
 
+.letter-space-1 {
+  letter-spacing: 1px; }
+
 /* Color Utils */
 .bgr-blue-lt {
   background-color: #75c5df; }
