@@ -51,6 +51,24 @@
 .div-gradient-overlay img {
   width: 100%; }
 
+dt, strong, .bold {
+  font-weight: bold; }
+
+em, .italic {
+  font-style: italic; }
+
+small, .text-small {
+  font-size: 0.8em; }
+
+.text-small-2 {
+  font-size: 0.7em; }
+
+.text-smaller {
+  font-size: 80%; }
+
+.text-reg {
+  font-weight: normal; }
+
 .text-light {
   font-weight: 200; }
 

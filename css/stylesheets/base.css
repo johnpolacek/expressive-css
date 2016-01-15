@@ -55,18 +55,6 @@ code {
   h1, .h1 {
     font-size: 4em; } }
 
-dt, strong, .bold {
-  font-weight: bold; }
-
-em, .italic {
-  font-style: italic; }
-
-small, .text-small {
-  font-size: 80%; }
-
-.text-reg {
-  font-weight: normal; }
-
 ul {
   padding-left: 1.5em; }
 

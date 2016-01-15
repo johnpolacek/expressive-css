@@ -35,11 +35,6 @@ code { font-family: Monaco, monospace; font-size: .9em; }
 @media (max-width: 480px) {
     h1, .h1 { font-size: 4em; }
 }
- 
-dt, strong,.bold { font-weight:bold; }
-em, .italic { font-style:italic; }
-small,.text-small { font-size: $fontSizeSmaller; }
-.text-reg {font-weight: normal;}
 
 ul { padding-left: 1.5em; }
 ul ul {padding-top: $pad1; }
