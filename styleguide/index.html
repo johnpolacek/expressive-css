@@ -44,7 +44,7 @@
                     <div class="grid-12 pad-3-bottom">
                         <h5><code>html</code></h5>
                         <p>Set default font styles, including family, color, size and line height.</p>
-                        <div class="l-grid-6 border-green pad-2-sides text-small">
+                        <div class="l-grid-6 border-green pad-2-sides pad-1-top text-small">
 <pre><code>html {
     font-family: Verdana,sans-serif;
     color: #222;
@@ -65,7 +65,7 @@
                             <span class="text">p</span>
                         </h5>
                         <p>To keep things DRY and consistent across your site, include utility classes for each level of font-sizing. Set margin and padding to 0 for <code>h1-h6</code>.</p>
-                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small">
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides pad-1-top text-small">
 <pre><code>h1,h2,h3,h4,h5,h6,p { padding:0; margin:0; }
 h1, .h1 { font-size: 5em; }
 h2, .h2 { font-size: 2.5em; }
@@ -80,7 +80,7 @@ p, .text {
 }</code></pre>
                         </div>
                         <div class="grid-12">
-                            <div class="grid-12 l-grid-6 border-green bgr-green pad-2-sides text-small">
+                            <div class="grid-12 l-grid-6 border-green bgr-green pad-2-sides pad-1-top text-small">
 <pre><code>&lt;span class="h1"&gt;h1&lt;/span&gt;
 &lt;span class="h2"&gt;h2&lt;/span&gt;
 &lt;span class="h3"&gt;h3&lt;/span&gt;
@@ -99,7 +99,7 @@ p, .text {
                             <div class="text h3 text-small">small, .text-small</div>
                         </h5>
                         <p>Extend the defaults for these text styling elements to utility classes such as <code>.text-small .italic .bold</code>.</p>
-                        <div class="l-grid-6 border-green pad-2-sides text-small">
+                        <div class="l-grid-6 border-green pad-2-sides pad-1-top text-small">
 <pre><code>strong, .bold { font-weight:bold; }
 em, .italic { font-style:italic; }
 small, .text-small { font-size: 80%; }</code></pre>
@@ -169,7 +169,7 @@ width for small screens,
                     <div class="grid-12 pad-3-bottom">
                         <h5><code>.container-#</code></h5>
                         <p>Use container classes for semi-fixed width elements. Use .container, .box, .wrapper, .div, .div or something similar as a prefix. Typically these have their left and right margin set to auto so they will be centered.</p>
-                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small">
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides pad-1-top text-small">
 <pre><code>.div-center {
   margin-left: auto;
   margin-right: auto;
@@ -206,7 +206,7 @@ width for small screens,
                         <h5><code>.pad-# .marg-#</code></h5>
                         <p>Use classes for levels of padding and margin to use across your site. By using these classes exclusively to set the spacing in and around the elements on the page, you will find it simple to maintain consistent alignment.</p>
                         <p>Additionally, like the grid, use breakpoint prefixing to adjust spacing for making layout adjustments at different screen sizes (e.g. <code>.s-pad-0</code> to remove padding for small screen sizes).</p>
-                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small">
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides pad-1-top text-small">
 <pre><code>.pad-1 { padding: .5em; }
 .pad-1-left { padding-left: .5em; }
 .pad-1-right { padding-right: .5em; }
@@ -219,7 +219,7 @@ width for small screens,
 ...etc
 </code></pre>
                         </div>
-                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small l-border-left-0 m-border-top-0 s-border-top-0">
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides pad-1-top text-small l-border-left-0 m-border-top-0 s-border-top-0">
 <pre><code>.marg-1 { margin: .5em; }
 .marg-1-left { margin-left: .5em; }
 .marg-1-right { margin-right: .5em; }
@@ -282,7 +282,7 @@ width for small screens,
                     <div class="grid-12 pad-3-bottom">
                         <h4 class="pad-1-bottom text-green-dk border-bottom marg-3-bottom">Typography</h4>
                         <p>There should already be a good set of utility classes in your base classes for text size and styling (e.g. <code>.bold .h2 .italic</code>). In addition to these, create utility classes for all the different colors of text you will plan on using. Use an abbreviation so it is clear that this is text color and to enable you to easily find and replace the class name to a different color if necessary.</p>
-                        <div class="grid-12 l-grid-6 border-green pad-2-sides text-small">
+                        <div class="grid-12 l-grid-6 border-green pad-2-sides pad-1-top text-small">
 <pre><code>.text-blue-lt { color: #75c5df; }
 .text-blue { color: #287dbe; }
 .text-blue-dk { color: #384992; }
@@ -317,7 +317,7 @@ width for small screens,
                 </div>
                 <div class="grid-12 pad-3-bottom">
                     <h5><code>.btn</code></h5>
-                    <div class="grid-12 l-grid-6 border-green pad-2-sides text-small marg-2-bottom">
+                    <div class="grid-12 l-grid-6 border-green pad-2-sides pad-1-top text-small marg-2-bottom">
 <pre><code>button, .btn {
     display: inline-block;
     background: #9fc74d;
@@ -482,7 +482,7 @@ button:hover, .btn:hover {
         </section>
 
         <div class="modal-overlay" id="modalExample" onclick="this.style.visibility = 'hidden'">
-            <div class="modal bgr-white block-400 pad-3" id="modalExampleContent">
+            <div class="modal bgr-white div-c div-400 pad-3" id="modalExampleContent">
                 <a href="#" class="modal-close pad-2" onclick="document.getElementById('modalExample').style.visibility = 'hidden';return false;">&times;</a>
                 <h3 class="pad-1-bottom">Modals</h3>
                 <p>Sometimes you need to interrupt the person to have them do something.</p>
@@ -499,7 +499,7 @@ button:hover, .btn:hover {
         </div>
 
         <div class="modal-overlay" id="modalSuccess" onclick="this.style.visibility = 'hidden'">
-            <div class="modal bgr-white block-400 pad-3" id="modalSuccessContent">
+            <div class="modal bgr-white div-c div-400 pad-3" id="modalSuccessContent">
                 <a href="#" class="modal-close pad-2" onclick="document.getElementById('modalSuccess').style.visibility = 'hidden';return false;">&times;</a>
                 <h3 class="pad-1-bottom">All Set!</h3>
                 <p>Congratulations. You did it.</p>
