@@ -3,7 +3,7 @@
 /* Containers */
 $widths: ('320','400','480','560','640','720','800','960','1100','1200');
 @include containersGenerator($widths,'div');
-.div-c { margin-left:auto; margin-right:auto; }
+.div-center { margin-left:auto; margin-right:auto; }
 
 .div-gradient-overlay {
 	display:block;

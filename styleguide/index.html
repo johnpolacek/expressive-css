@@ -19,7 +19,7 @@
         </div>
 
         <section class="grid-12 pad-3 s-pad-2">
-            <div class="div-960 div-c">
+            <div class="div-960 div-center">
                 <h1 class="marg-2-bottom text-green-dk text-light border-bottom">Expressive CSS</h1>
                 <p class="text-grey">Stop defining the same CSS properties over and over again. Use a core group of utility classes to keep your CSS lightweight, scalable and easy to understand. Document your classes as you go, such as in this starter example.</p>
                 <p class="pad-1-top pad-3-bottom"><a href="../">View Authoring Guidelines</a></p>
@@ -27,13 +27,13 @@
         </section>
 
         <section class="grid-12 pad-2-top pad-3-sides s-pad-2-sides">
-            <div class="div-960 div-c">
+            <div class="div-960 div-center">
                 <h2>Styleguide</h2>
             </div>
         </section>      
 
         <section class="grid-12 pad-3 s-pad-2">
-            <div class="div-960 div-c">
+            <div class="div-960 div-center">
                 <div class="grid-12 pad-3-bottom">
                     <h3 class="marg-2-bottom bgr-blue text-white text-light pad-2-sides">Base</h3>
                     <p>A good base contains default styles for HTML elements, written in such a way to minimize the need to override. Also include libraries for reset and grid scaffolding.</p>
@@ -104,6 +104,7 @@ p, .text {
                         <div class="l-grid-6 border-green pad-2-sides pad-1-top text-small">
 <pre><code>strong, .bold { font-weight:bold; }
 em, .italic { font-style:italic; }
+
 small, .text-smaller { font-size: 80%; }
 .text-small { font-size: .8em; }
 .text-small-2 { font-size: .7em; }
@@ -125,7 +126,7 @@ small, .text-smaller { font-size: 80%; }
         </section>
 
         <section class="grid-12 pad-3 s-pad-2">
-            <div class="div-960 div-c">
+            <div class="div-960 div-center">
                 <div class="grid-12 pad-3-bottom">
                     <h3 class="marg-2-bottom bgr-green-dk text-white text-light pad-2-sides">Utilities</h3>
                     <p>Utility classes are at the heart of Expressive CSS. They are easy to write and understand. Using them reduces the necessity to re-declare the same sets of related properties over and over again, keeping your stylesheets more DRY and less complex.</p>
@@ -175,7 +176,7 @@ width for small screens,
                         <h5><code>.container-#</code></h5>
                         <p>Use container classes for semi-fixed width elements. Use .container, .box, .wrapper, .div, .div or something similar as a prefix. Typically these have their left and right margin set to auto so they will be centered.</p>
                         <div class="grid-12 l-grid-6 border-green pad-2-sides pad-1-top text-small">
-<pre><code>.div-center {
+<pre><code>.div-centerenter {
   margin-left: auto;
   margin-right: auto;
 }
@@ -190,20 +191,20 @@ width for small screens,
 .div-1200 { max-width:1200px; }</code></pre>
                         </div>
                         <div class="grid-12 pad-3-vert text-center">
-                            <div class="div-960 div-c marg-1-bottom bgr-green"><code>.div-960</code></div>
+                            <div class="div-960 div-center marg-1-bottom bgr-green"><code>.div-960</code></div>
                             <div class="div-800 marg-1-bottom bgr-green"><code>.div-800</code></div>
                             <div class="div-720 marg-1-bottom bgr-green"><code>.div-720</code></div>
                             <div class="div-640 marg-1-bottom bgr-green"><code>.div-640</code></div>
                             <div class="div-480 marg-1-bottom bgr-green"><code>.div-480</code></div>
                             <div class="div-400 marg-1-bottom bgr-green"><code>.div-400</code></div>
                             <div class="div-320 marg-1-bottom bgr-green"><code>.div-320</code></div>
-                            <div class="div-960 div-c block-center marg-1-bottom bgr-green"><code>.div-center .div-960</code></div>
-                            <div class="div-800 block-center marg-1-bottom bgr-green"><code>.div-center .div-800</code></div>
-                            <div class="div-720 block-center marg-1-bottom bgr-green"><code>.div-center .div-720</code></div>
-                            <div class="div-640 block-center marg-1-bottom bgr-green"><code>.div-center .div-640</code></div>
-                            <div class="div-480 block-center marg-1-bottom bgr-green"><code>.div-center .div-480</code></div>
-                            <div class="div-400 block-center marg-1-bottom bgr-green"><code>.div-center .div-400</code></div>
-                            <div class="div-320 block-center marg-1-bottom bgr-green"><code>.div-center .div-320</code></div>
+                            <div class="div-960 div-center block-center marg-1-bottom bgr-green"><code>.div-centerenter .div-960</code></div>
+                            <div class="div-800 block-center marg-1-bottom bgr-green"><code>.div-centerenter .div-800</code></div>
+                            <div class="div-720 block-center marg-1-bottom bgr-green"><code>.div-centerenter .div-720</code></div>
+                            <div class="div-640 block-center marg-1-bottom bgr-green"><code>.div-centerenter .div-640</code></div>
+                            <div class="div-480 block-center marg-1-bottom bgr-green"><code>.div-centerenter .div-480</code></div>
+                            <div class="div-400 block-center marg-1-bottom bgr-green"><code>.div-centerenter .div-400</code></div>
+                            <div class="div-320 block-center marg-1-bottom bgr-green"><code>.div-centerenter .div-320</code></div>
                         </div>
                     </div>
                     
@@ -314,7 +315,7 @@ width for small screens,
         </section>
 
         <section class="grid-12 pad-3 s-pad-2">
-            <div class="div-960 div-c">
+            <div class="div-960 div-center">
                 <div class="grid-12 pad-3-bottom">
                     <h3 class="marg-2-bottom bgr-purple text-white text-light pad-2-sides">Components</h3>
                     <p>To reduce complexity in your CSS, rely on utility classes whenever possible. For elements that necessitate additional custom styling, use component classes. For these components, you may wish to use a CSS methodology such as OOCSS or BEM.</p>
@@ -467,7 +468,7 @@ button:hover, .btn:hover {
         </section>
 
         <section class="grid-12 pad-3 s-pad-2">
-            <div class="div-960 div-c pad-3-bottom">
+            <div class="div-960 div-center pad-3-bottom">
                 <div class="grid-12 pad-3-bottom">
                     <h3 class="marg-2-bottom bgr-pink text-white text-light pad-2-sides">More Info</h3>
                     <p>This basic example styleguide is meant to be a starting point. There are many variations that you may take for any given project. To find out more about similar approaches to CSS, check out the following related articles and projects.</p>
@@ -487,7 +488,7 @@ button:hover, .btn:hover {
         </section>
 
         <div class="modal-overlay" id="modalExample" onclick="this.style.visibility = 'hidden'">
-            <div class="modal bgr-white div-c div-400 pad-3" id="modalExampleContent">
+            <div class="modal bgr-white div-center div-400 pad-3" id="modalExampleContent">
                 <a href="#" class="modal-close pad-2" onclick="document.getElementById('modalExample').style.visibility = 'hidden';return false;">&times;</a>
                 <h3 class="pad-1-bottom">Modals</h3>
                 <p>Sometimes you need to interrupt the person to have them do something.</p>
@@ -504,7 +505,7 @@ button:hover, .btn:hover {
         </div>
 
         <div class="modal-overlay" id="modalSuccess" onclick="this.style.visibility = 'hidden'">
-            <div class="modal bgr-white div-c div-400 pad-3" id="modalSuccessContent">
+            <div class="modal bgr-white div-center div-400 pad-3" id="modalSuccessContent">
                 <a href="#" class="modal-close pad-2" onclick="document.getElementById('modalSuccess').style.visibility = 'hidden';return false;">&times;</a>
                 <h3 class="pad-1-bottom">All Set!</h3>
                 <p>Congratulations. You did it.</p>
