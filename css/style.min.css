@@ -184,7 +184,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+.grid, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
   margin: 0;
   clear: none;
   float: left; }
@@ -449,7 +449,7 @@ html {
   margin-bottom: 0; }
 
 @media (max-width: 480px) {
-  .s-grid-1, .s-grid-2, .s-grid-3, .s-grid-4, .s-grid-5, .s-grid-6, .s-grid-7, .s-grid-8, .s-grid-9, .s-grid-10, .s-grid-11, .s-grid-12 {
+  .s-grid, .s-grid-1, .s-grid-2, .s-grid-3, .s-grid-4, .s-grid-5, .s-grid-6, .s-grid-7, .s-grid-8, .s-grid-9, .s-grid-10, .s-grid-11, .s-grid-12 {
     margin: 0;
     clear: none;
     float: left; }
@@ -633,7 +633,7 @@ html {
     margin-bottom: 0; } }
 
 @media (min-width: 481px) and (max-width: 800px) {
-  .m-grid-1, .m-grid-2, .m-grid-3, .m-grid-4, .m-grid-5, .m-grid-6, .m-grid-7, .m-grid-8, .m-grid-9, .m-grid-10, .m-grid-11, .m-grid-12 {
+  .m-grid, .m-grid-1, .m-grid-2, .m-grid-3, .m-grid-4, .m-grid-5, .m-grid-6, .m-grid-7, .m-grid-8, .m-grid-9, .m-grid-10, .m-grid-11, .m-grid-12 {
     margin: 0;
     clear: none;
     float: left; }
@@ -817,7 +817,7 @@ html {
     margin-bottom: 0; } }
 
 @media (min-width: 801px) {
-  .l-grid-1, .l-grid-2, .l-grid-3, .l-grid-4, .l-grid-5, .l-grid-6, .l-grid-7, .l-grid-8, .l-grid-9, .l-grid-10, .l-grid-11, .l-grid-12 {
+  .l-grid, .l-grid-1, .l-grid-2, .l-grid-3, .l-grid-4, .l-grid-5, .l-grid-6, .l-grid-7, .l-grid-8, .l-grid-9, .l-grid-10, .l-grid-11, .l-grid-12 {
     margin: 0;
     clear: none;
     float: left; }
@@ -999,6 +999,52 @@ html {
   .l-marg-0-vert {
     margin-top: 0;
     margin-bottom: 0; } }
+
+.pad-half {
+  padding: 4px; }
+
+.pad-half-left {
+  padding-left: 4px; }
+
+.pad-half-right {
+  padding-right: 4px; }
+
+.pad-half-top {
+  padding-top: 4px; }
+
+.pad-half-bottom {
+  padding-bottom: 4px; }
+
+.pad-half-sides {
+  padding-left: 4px;
+  padding-right: 4px; }
+
+.pad-half-vert {
+  padding-top: 4px;
+  padding-bottom: 4px; }
+
+.marg-half {
+  margin: 4px; }
+
+.marg-half-left {
+  margin-left: 4px; }
+
+.marg-half-right {
+  margin-right: 4px; }
+
+.marg-half-top {
+  margin-top: 4px; }
+
+.marg-half-bottom {
+  margin-bottom: 4px; }
+
+.marg-half-sides {
+  margin-left: 4px;
+  margin-right: 4px; }
+
+.marg-half-vert {
+  margin-top: 4px;
+  margin-bottom: 4px; }
 
 /*  Expressive CSS
 
