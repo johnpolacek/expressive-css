@@ -16,6 +16,9 @@ button, .btn {
 		background: $green-dk;
 	}
 }
+.pad-btn {
+	padding: $buttonPadding; // when you want an element to have the same padding as your buttons
+}
 .btn-blue {
 	background:$blue;
 	&:hover {
@@ -34,7 +37,6 @@ button, .btn {
 .btn-wide {
 	width:100%;
 }
-
 .btn-small {
 	padding: $buttonPaddingSmaller;
 	font-size: $fontSizeSmaller;

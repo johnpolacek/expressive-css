@@ -79,6 +79,9 @@ button, .btn {
   button:hover, .btn:hover {
     background: #5bb12f; }
 
+.pad-btn {
+  padding: 4px 8px; }
+
 .btn-blue {
   background: #287dbe; }
   .btn-blue:hover {
