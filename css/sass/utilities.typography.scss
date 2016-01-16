@@ -2,9 +2,9 @@
 
 dt, strong,.bold { font-weight:bold; }
 em, .italic { font-style:italic; }
-small,.text-small { font-size: $fontSizeSmall1; }
+small, .text-smaller { font-size: $fontSizeSmaller; }
+.text-small { font-size: $fontSizeSmall1; }
 .text-small-2 { font-size: $fontSizeSmall2; }
-.text-smaller { font-size: $fontSizeSmaller; }
 
 .text-reg {font-weight: normal;}
 .text-light { font-weight:200; }

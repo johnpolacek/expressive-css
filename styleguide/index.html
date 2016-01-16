@@ -96,13 +96,18 @@ p, .text {
                         <h5 class="pad-2-bottom">
                             <div class="h4 bold">strong, .bold</div>
                             <div class="text h3 italic">em, .italic</div>
-                            <div class="text h3 text-small">small, .text-small</div>
+                            <div class="text h3 text-smaller">.text-smaller</div>
+                            <div class="text h3 text-small">.text-small, small</div>
+                            <div class="text h3 text-small-2">.text-small-2</div>
                         </h5>
                         <p>Extend the defaults for these text styling elements to utility classes such as <code>.text-small .italic .bold</code>.</p>
                         <div class="l-grid-6 border-green pad-2-sides pad-1-top text-small">
 <pre><code>strong, .bold { font-weight:bold; }
 em, .italic { font-style:italic; }
-small, .text-small { font-size: 80%; }</code></pre>
+small, .text-smaller { font-size: 80%; }
+.text-small { font-size: .8em; }
+.text-small-2 { font-size: .7em; }
+</code></pre>
                         </div>
                     </div>
                 </div>

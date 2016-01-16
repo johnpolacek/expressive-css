@@ -57,14 +57,14 @@ dt, strong, .bold {
 em, .italic {
   font-style: italic; }
 
-small, .text-small {
+small, .text-smaller {
+  font-size: 80%; }
+
+.text-small {
   font-size: 0.8em; }
 
 .text-small-2 {
   font-size: 0.7em; }
-
-.text-smaller {
-  font-size: 80%; }
 
 .text-reg {
   font-weight: normal; }
