@@ -1551,17 +1551,44 @@ small, .text-smaller {
 .border-right {
   border-right: solid 1px rgba(0, 0, 0, 0.1); }
 
-.border-green {
-  border: solid 1px #9fc74d; }
-
-.border-white {
-  border: solid 1px #fff; }
-
-.border-bottom {
-  border-bottom: solid 1px rgba(0, 0, 0, 0.1); }
-
 .border-dashed {
   border-style: dashed; }
+
+.border-dotted {
+  border-style: dotted; }
+
+.border-blue-lt {
+  border-color: #75c5df; }
+
+.border-blue {
+  border-color: #287dbe; }
+
+.border-blue-dk {
+  border-color: #384992; }
+
+.border-green {
+  border-color: #9fc74d; }
+
+.border-green-dk {
+  border-color: #5bb12f; }
+
+.border-white {
+  border-color: #fff; }
+
+.border-grey-lt {
+  border-color: #ececec; }
+
+.border-grey {
+  border-color: #999; }
+
+.border-pink {
+  border-color: #ec66a2; }
+
+.border-purple {
+  border-color: #9e579e; }
+
+.border-red {
+  border-color: #cd242a; }
 
 /* Responsive Utilities */
 .float-none {
