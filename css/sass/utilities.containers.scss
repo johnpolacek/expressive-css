@@ -3,9 +3,9 @@
 /* Containers */
 $widths: ('320','400','480','560','640','720','800','960','1100','1200');
 @include containersGenerator($widths,'div');
-.div-center { margin-left:auto; margin-right:auto; }
+.box-center { margin-left:auto; margin-right:auto; }
 
-.div-gradient-overlay {
+.box-gradient-overlay {
 	display:block;
 	position:relative;
 	
@@ -21,4 +21,4 @@ $widths: ('320','400','480','560','640','720','800','960','1100','1200');
 		background: linear-gradient(to bottom, transparent 50%,#000 100%);
 	}
 }
-.div-gradient-overlay img { width:100%; }
+.box-gradient-overlay img { width:100%; }
