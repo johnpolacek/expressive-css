@@ -2,7 +2,7 @@
 
 /* Containers */
 $widths: ('320','400','480','560','640','720','800','960','1100','1200');
-@include containersGenerator($widths,'div');
+@include containersGenerator($widths,'box');
 .box-center { margin-left:auto; margin-right:auto; }
 
 .box-gradient-overlay {
