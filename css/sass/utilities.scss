@@ -3,6 +3,9 @@
 @import 'utilities.colors.scss';
 @import 'vars.scss';
 
+// Responsive Utilities Mixin
+@import '_mixins/responsive-utilities.generator.scss';
+
 /* Utilities */
 .hidden { display:none !important; }
 .transparent { opacity:0; }
@@ -17,8 +20,6 @@
   width: auto;
 }
 .wide { width: 100%; }
-.rel { position: relative; }
-.abs { position: absolute; }
 .pos-top {top:0;}
 .pos-bottom {bottom:0;}
 .pos-right {right:0;}
@@ -45,10 +46,11 @@
 }
 
 /* Responsive Utilities */
-@import '_mixins/responsive-utilities.generator.scss';
 // Add all utility classes here in a mixin
 @mixin responsiveUtilities($_prefix:''){
 
+  .#{$_prefix}rel { position: relative; }
+  .#{$_prefix}abs { position: absolute; }
   .#{$_prefix}float-none { float: none; }
   .#{$_prefix}float-right { float: right; }
   .#{$_prefix}float-left { float: left; }
