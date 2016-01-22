@@ -73,6 +73,8 @@
   .#{$_prefix}border-left-0 { border-left: none; }
   .#{$_prefix}border-right-0 { border-right: none; }
 
+  // hide pseudo elements
+  .#{$_prefix}before-hidden {  &:before { display: none;  }
   .#{$_prefix}after-hidden {  &:after { display: none;  }
   }
 }
