@@ -59,6 +59,8 @@
   .#{$_prefix}text-left { text-align:left; }
   .#{$_prefix}text-right { text-align:right; }
 
+  .#{$_prefix}text-dark { color:$dark; }
+
   .#{$_prefix}hidden { display: none; }
 
   .#{$_prefix}border-0 { border:none; }
