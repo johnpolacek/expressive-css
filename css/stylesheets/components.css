@@ -1,9 +1,11 @@
 /* Components */
 fieldset {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+}
 
 select {
-  width: 100%; }
+  width: 100%;
+}
 
 input, textarea {
   width: 100%;
@@ -12,26 +14,32 @@ input, textarea {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
 
 input[type=checkbox], input[type=radio] {
   width: auto;
   height: auto;
-  margin: 0 8px 0 0; }
+  margin: 0 8px 0 0;
+}
 
 label {
   width: 100%;
-  display: block; }
+  display: block;
+}
 
 input.error, select.error, textarea.error {
-  border: dotted 1px #cd242a; }
+  border: dotted 1px #cd242a;
+}
 
 input[disabled], select[disabled], input[readonly], select[readonly] {
   background-color: #eee;
-  color: #888; }
+  color: #888;
+}
 
 input[readonly] {
-  cursor: text; }
+  cursor: text;
+}
 
 .tooltip {
   position: absolute;
@@ -40,7 +48,8 @@ input[readonly] {
   background-color: #9fc74d;
   color: white;
   transform: translateY(-100%);
-  border: solid 2px #fff; }
+  border: solid 2px #fff;
+}
 
 .tooltip:after {
   top: 100%;
@@ -53,16 +62,20 @@ input[readonly] {
   pointer-events: none;
   border-color: transparent;
   border-top-color: #9fc74d;
-  border-width: 6px; }
+  border-width: 6px;
+}
 
 .tooltip-hover {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 div:hover > .tooltip-hover {
-  visibility: visible; }
+  visibility: visible;
+}
 
 .tooltip.error:after {
-  border-top-color: #cd242a; }
+  border-top-color: #cd242a;
+}
 
 button, .btn {
   display: inline-block;
@@ -75,56 +88,75 @@ button, .btn {
   border: none;
   text-decoration: none;
   outline: none;
-  margin-bottom: 4px; }
-  button:hover, .btn:hover {
-    background: #5bb12f; }
+  margin-bottom: 4px;
+}
+
+button:hover, .btn:hover {
+  background: #5bb12f;
+}
 
 .pad-btn {
-  padding: 4px 8px; }
+  padding: 4px 8px;
+}
 
 .btn-blue {
-  background: #287dbe; }
-  .btn-blue:hover {
-    background: #384992; }
+  background: #287dbe;
+}
+
+.btn-blue:hover {
+  background: #384992;
+}
 
 .btn-pink {
-  background: #ec66a2; }
-  .btn-pink:hover {
-    background: #9e579e; }
+  background: #ec66a2;
+}
+
+.btn-pink:hover {
+  background: #9e579e;
+}
 
 .btn-wide {
-  width: 100%; }
+  width: 100%;
+}
 
 .btn-wide {
-  width: 100%; }
+  width: 100%;
+}
 
 .btn-small {
   padding: 3px 6px;
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 .btn-large {
   padding: 8px 16px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+}
 
 .btn-huge {
   padding: 16px 24px;
-  font-size: 1.375em; }
+  font-size: 1.375em;
+}
 
 p a, li a, blockquote a, cite a, .link-text {
   color: #287dbe;
   border-bottom: solid 1px rgba(0, 0, 0, 0.1);
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 p a:hover, li a:hover, blockquote a:hover, cite a:hover, .link-text:hover {
-  border-bottom: solid 1px rgba(0, 0, 0, 0.12); }
+  border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+}
 
 table {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+}
 
 th, td, caption {
   padding: 8px;
   text-align: left;
-  border-bottom: solid 1px #ddd; }
+  border-bottom: solid 1px #ddd;
+}
 
 .modal-overlay {
   position: absolute;
@@ -134,10 +166,12 @@ th, td, caption {
   left: 0;
   background: rgba(66, 66, 66, 0.8);
   visibility: hidden;
-  z-index: 9999999; }
+  z-index: 9999999;
+}
 
 .modal {
-  position: relative; }
+  position: relative;
+}
 
 .modal-close {
   position: absolute;
@@ -146,7 +180,8 @@ th, td, caption {
   text-decoration: none;
   color: #777;
   line-height: .5;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 /*!
  * "Fork me on GitHub" CSS ribbon v0.1.1 | MIT License
@@ -168,7 +203,8 @@ th, td, caption {
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.15));
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.15));
   z-index: 9999;
-  pointer-events: auto; }
+  pointer-events: auto;
+}
 
 .github-fork-ribbon a,
 .github-fork-ribbon a:hover {
@@ -189,7 +225,8 @@ th, td, caption {
   border-width: 1px 0;
   border-style: dotted;
   border-color: #fff;
-  border-color: rgba(255, 255, 255, 0.7); }
+  border-color: rgba(255, 255, 255, 0.7);
+}
 
 .github-fork-ribbon-wrapper {
   width: 150px;
@@ -198,13 +235,16 @@ th, td, caption {
   overflow: hidden;
   top: 0;
   z-index: 9999;
-  pointer-events: none; }
+  pointer-events: none;
+}
 
 .github-fork-ribbon-wrapper.fixed {
-  position: fixed; }
+  position: fixed;
+}
 
 .github-fork-ribbon-wrapper.right {
-  right: 0; }
+  right: 0;
+}
 
 .github-fork-ribbon-wrapper.right .github-fork-ribbon {
   top: 42px;
@@ -213,4 +253,5 @@ th, td, caption {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+}

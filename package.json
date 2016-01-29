@@ -19,7 +19,7 @@
     "node-sass": "latest"
   },
   "scripts": {
-    "build": "node-sass css/sass/base.scss css/stylesheets/base.css --style expanded && node-sass css/sass/utilities.scss css/stylesheets/utilities.css --style compact && node-sass css/sass/components.scss css/stylesheets/components.css --style expanded && node-sass css/sass/style.scss css/style.min.css --style compressed",
+    "build": "node-sass css/sass/base.scss css/stylesheets/base.css --output-style expanded && node-sass css/sass/utilities.scss css/stylesheets/utilities.css --output-style compact && node-sass css/sass/components.scss css/stylesheets/components.css --output-style expanded && node-sass css/sass/style.scss css/style.min.css --output-style compressed",
     "watch": "onchange 'css/sass/**/*' -- npm run build"
   },
   "author": {
