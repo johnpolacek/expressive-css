@@ -2,10 +2,10 @@ Expressive CSS is not intended to be a library or framework, but rather a presen
 
 For more info, go to the [Expressive CSS Project Page](http://johnpolacek.github.io/expressive-css/).
 
-To install:  
+To install [download the project](https://github.com/johnpolacek/expressive-css/archive/master.zip) or run:  
 ```npm install expressive-css```
 
-This project uses npm as its build tool, which is used to process the SASS files via [node-sass CLI](https://github.com/sass/node-sass#command-line-interface). To build the project:  
+This project uses npm as its build tool – [read more here](http://johnpolacek.com/2015/12/05/expressive-css-and-npm-as-a-build-tool/) – which is used to process the SASS files via [node-sass CLI](https://github.com/sass/node-sass#command-line-interface). To build the project:  
 ```npm run build```
 
 Or, to build the project with every save:  
