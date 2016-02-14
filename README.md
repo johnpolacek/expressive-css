@@ -13,6 +13,6 @@ Or, to build the project with every save:
 
 This project contains some useful SASS mixins, such as utility generators. Check them out in the [css/sass/_mixins directory](https://github.com/johnpolacek/expressive-css/tree/master/css/sass/_mixins).
 
-If you like the responsive grid system, check out the [Simple Grid](https://github.com/johnpolacek/simple-grid) and [Simple Grid Generator](https://github.com/johnpolacek/simple-grid-generator).
+If you like the responsive grid system, check out [Simple Grid](https://github.com/johnpolacek/simple-grid) and [Simple Grid Generator](https://github.com/johnpolacek/simple-grid-generator).
 
 Find me on Twitter at [@johnpolacek](https://twitter.com/johnpolacek) and online at [johnpolacek.com](http://johnpolacek.com)
