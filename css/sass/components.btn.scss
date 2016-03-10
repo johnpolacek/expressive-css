@@ -25,6 +25,12 @@ button, .btn {
 		background: $blue-dk;
 	}
 }
+.btn-blue-lt {
+	background:$blue-lt;
+	&:hover {
+		background: $blue;
+	}
+}
 .btn-pink {
 	background:$pink;
 	&:hover {

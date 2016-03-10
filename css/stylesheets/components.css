@@ -107,6 +107,14 @@ button:hover, .btn:hover {
   background: #384992;
 }
 
+.btn-blue-lt {
+  background: #75c5df;
+}
+
+.btn-blue-lt:hover {
+  background: #287dbe;
+}
+
 .btn-pink {
   background: #ec66a2;
 }
