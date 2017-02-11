@@ -10,6 +10,8 @@
 .hidden { display:none !important; }
 .transparent { opacity:0; }
 
+.clickable { cursor:pointer; }
+
 .clearfix:before,.clearfix:after { content:" ";display:table; }
 .clearfix:after{ clear:both; }
 

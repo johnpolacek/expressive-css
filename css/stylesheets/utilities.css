@@ -101,6 +101,8 @@ small, .text-smaller { font-size: 80%; }
 
 .transparent { opacity: 0; }
 
+.clickable { cursor: pointer; }
+
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 
 .clearfix:after { clear: both; }
