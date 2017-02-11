@@ -101,10 +101,9 @@ small, .text-smaller { font-size: 80%; }
 
 .transparent { opacity: 0; }
 
-/* group = clearfix */
-.group:before, .group:after { content: " "; display: table; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
 
-.group:after { clear: both; }
+.clearfix:after { clear: both; }
 
 .inline { display: inline-block; *display: inline; *zoom: 1; width: auto; }
 
