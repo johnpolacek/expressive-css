@@ -119,11 +119,11 @@ small, .text-smaller { font-size: 80%; }
 
 .pos-left { left: 0; }
 
-.z-999 { z-index: 999; }
+.front { z-index: 99999; }
 
-.z-9999 { z-index: 9999; }
+.front-1 { z-index: 99998; }
 
-.z-99999 { z-index: 99999; }
+.front-2 { z-index: 99997; }
 
 .rounded { border-radius: 4px; }
 
