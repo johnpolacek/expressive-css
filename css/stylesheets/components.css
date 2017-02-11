@@ -89,6 +89,7 @@ button, .btn {
   text-decoration: none;
   outline: none;
   margin-bottom: 4px;
+  line-height: inherit;
 }
 
 button:hover, .btn:hover {
