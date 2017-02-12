@@ -1092,13 +1092,5 @@ html {
   margin-bottom: 4px; }
 
 .grid-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -moz-box-wrap: wrap;
-  -webkit-box-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flexbox-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
