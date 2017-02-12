@@ -84,7 +84,7 @@ button, .btn {
   color: #fff;
   padding: 4px 12px;
   border-radius: 4px;
-  transition: all .15s ease-in-out;
+  transition: all .25s ease-in-out;
   border: none;
   text-decoration: none;
   outline: none;
@@ -93,35 +93,12 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-  background: #5bb12f;
+  filter: brightness(0.75) contrast(2.5) saturate(0.8);
+  border-bottom: 0;
 }
 
 .pad-btn {
   padding: 4px 12px;
-}
-
-.btn-blue {
-  background: #287dbe;
-}
-
-.btn-blue:hover {
-  background: #384992;
-}
-
-.btn-blue-lt {
-  background: #75c5df;
-}
-
-.btn-blue-lt:hover {
-  background: #287dbe;
-}
-
-.btn-pink {
-  background: #ec66a2;
-}
-
-.btn-pink:hover {
-  background: #9e579e;
 }
 
 .btn-wide {

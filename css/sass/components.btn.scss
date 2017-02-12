@@ -7,36 +7,19 @@ button, .btn {
 	color:#fff;
 	padding: $buttonPadding;
 	border-radius: $borderRadius;
-	transition: all .15s ease-in-out;
+	transition: all .25s ease-in-out;
 	border:none;
 	text-decoration:none;
 	outline: none;
 	margin-bottom: 4px;
 	line-height: inherit;
 	&:hover {
-		background: $green-dk;
+		filter: brightness(0.75) contrast(2.5) saturate(.8);
+		border-bottom:0;
 	}
 }
 .pad-btn {
 	padding: $buttonPadding; // when you want an element to have the same padding as your buttons
-}
-.btn-blue {
-	background:$blue;
-	&:hover {
-		background: $blue-dk;
-	}
-}
-.btn-blue-lt {
-	background:$blue-lt;
-	&:hover {
-		background: $blue;
-	}
-}
-.btn-pink {
-	background:$pink;
-	&:hover {
-		background: $purple;
-	}
 }
 .btn-wide {
 	width:100%;
