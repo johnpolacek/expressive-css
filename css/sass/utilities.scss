@@ -21,30 +21,21 @@
   width: auto;
 }
 .wide { width: 100%; }
+.tall { height: 100%; }
+.expand-v { min-height: 100vh; }
+
 .pos-top {top:0;}
 .pos-bottom {bottom:0;}
 .pos-right {right:0;}
 .pos-left {left:0;}
 
+.overlay {z-index: 999999;}
 .front {z-index:99999};
 .front-1 {z-index:99998};
 .front-2 {z-index:99997};
 
 .rounded { border-radius: $borderRadius; }
 .circle { border-radius: 50%; }
-
-.border { border: solid 1px rgba(0,0,0,.1); }
-.border-top { border-top: solid 1px rgba(0,0,0,.1); }
-.border-bottom { border-bottom: solid 1px rgba(0,0,0,.1); }
-.border-left { border-left: solid 1px rgba(0,0,0,.1); }
-.border-right { border-right: solid 1px rgba(0,0,0,.1); }
-.border-dashed { border-style: dashed; }
-.border-dotted { border-style: dotted; }
-@for $i from 1 through length($colors) {
-  $name: nth($colorNames, $i);
-  $color: nth($colors, $i);
-  .border-#{$name} { border-color: $color; }
-}
 
 /* Responsive Utilities */
 // Add all utility classes here in a mixin
@@ -65,10 +56,11 @@
   .#{$_prefix}hidden { display: none; }
 
   .#{$_prefix}border-0 { border:none; }
-  .#{$_prefix}border-top { border-top: solid 1px rgba(0,0,0,.1); }
-  .#{$_prefix}border-bottom { border-bottom: solid 1px rgba(0,0,0,.1); }
-  .#{$_prefix}border-left { border-left: solid 1px rgba(0,0,0,.1); }
-  .#{$_prefix}border-right { border-right: solid 1px rgba(0,0,0,.1); }
+  .#{$_prefix}border { border-style: solid; border-width:1px; border-color: rgba(0,0,0,.1); }
+  .#{$_prefix}border-top { border-top-style: solid; border-width:1px; border-color: rgba(0,0,0,.1); }
+  .#{$_prefix}border-bottom { border-bottom-style: solid; border-width:1px; border-color: rgba(0,0,0,.1); }
+  .#{$_prefix}border-left { border-left-style: solid; border-width:1px; border-color: rgba(0,0,0,.1); }
+  .#{$_prefix}border-right { border-right-style: solid; border-width:1px; border-color: rgba(0,0,0,.1); }
   .#{$_prefix}border-top-0 { border-top: none; }
   .#{$_prefix}border-bottom-0 { border-bottom: none; }
   .#{$_prefix}border-left-0 { border-left: none; }
@@ -79,3 +71,12 @@
   .#{$_prefix}after-hidden {  &:after { display: none;  }}
 }
 @include responsiveUtilitiesGenerator();
+
+.border-dashed { border-style: dashed; }
+.border-dotted { border-style: dotted; }
+@for $i from 1 through length($colors) {
+  $name: nth($colorNames, $i);
+  $color: nth($colors, $i);
+  .border-#{$name} { border-color: $color; }
+}
+.shadow { box-shadow: 0px 0px 20px 0px rgba(0,0,0,.1); }
